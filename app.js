@@ -3,6 +3,7 @@ if(process.env.NODE_ENV !="production"){
 }
 
 
+
 const express = require("express");
 const app = express(); //for access app router like (app.get)
 const mongoose = require("mongoose");
@@ -93,14 +94,6 @@ app.use((req,res,next)=>{
 });
 
 
-// app.get("/demouser",async(req,res)=>{
-//     let fakerUser = new User ({
-//         email : "kaifbhati58@gmail.con",
-//         username : "delta-Student",
-//     });
-//     let registeredUser = await User.register(fakerUser,"helloworld");
-//     res.send(registeredUser);
-// })
 
 
 
