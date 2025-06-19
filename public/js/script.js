@@ -1,3 +1,5 @@
+//this file is used to add custom JavaScript functionality to the website 
+// and to handle form validation using Bootstrap's validation styles
 (() => {
     'use strict'
   
