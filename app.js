@@ -101,8 +101,9 @@ app.use("/listings",listingRouter);//for use express route
 app.use("/listings/:id/reviews",reviewRouter);
 app.use("/",userRouter)
 
-app.all("*",(req,res,next)=>{
-    next(new ExpressError(404,"Page Not Found!"));
+app.all(/.*/,(req,res,next)=>{
+    next(new ExpressError(404,"Page Not Found!"));//updated version of error handling
+    // res.status(404).send("Page Not Found!");
 
 });
 
